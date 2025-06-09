@@ -2,8 +2,6 @@
 
 Sebuah skrip Python `all-in-one` untuk melakukan asesmen mendalam terhadap postur keamanan email suatu domain. Alat ini memeriksa konfigurasi fundamental seperti SPF, DKIM, DMARC, keamanan transport (TLS), dan reputasi IP, serta mampu mendeteksi miskonfigurasi umum pada DNS.
 
-![Contoh Output Skrip](https://i.imgur.com/your-image-placeholder.png) ---
-
 ## Fitur Utama
 
 -   **Pemeriksaan Autentikasi:** Validasi mendalam terhadap record SPF, DKIM, dan DMARC, termasuk penanganan pewarisan (inheritance) pada subdomain.
