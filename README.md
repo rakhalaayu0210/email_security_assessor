@@ -1,5 +1,3 @@
-# email_security_assessor
-
 # Asesor Keamanan Email Komprehensif
 
 Sebuah skrip Python `all-in-one` untuk melakukan asesmen mendalam terhadap postur keamanan email suatu domain. Alat ini memeriksa konfigurasi fundamental seperti SPF, DKIM, DMARC, keamanan transport (TLS), dan reputasi IP, serta mampu mendeteksi miskonfigurasi umum pada DNS.
