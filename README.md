@@ -76,10 +76,10 @@ python3 email_assessor_final.py --domain google.com
 Berikut adalah contoh output saat skrip mendeteksi miskonfigurasi kritis pada MX record:
 
 ```
-Mulai Asesmen Keamanan Email untuk Domain: hin0.co.id
+Mulai Asesmen Keamanan Email untuk Domain: fakedomain.co.id
 
 =============== TEMUAN KRITIS: Konfigurasi MX Record Tidak Standar ===============
-[-] [Temuan]: MX Record untuk domain 'hin0.co.id' menunjuk langsung ke alamat IP (103.93.160.39), bukan ke hostname.
+[-] [Temuan]: MX Record untuk domain 'fakedomain.co.id' menunjuk langsung ke alamat IP (xxx.xxx.xxx.xxx), bukan ke hostname.
 
 [!] [Risiko/Dampak]:
 [!]   1. Pelanggaran Standar RFC 5321: Menyebabkan masalah interoperabilitas dengan server email lain.
@@ -89,14 +89,14 @@ Mulai Asesmen Keamanan Email untuk Domain: hin0.co.id
 
 [+] [Rekomendasi Perbaikan (Langkah Selanjutnya)]:
 [+]   1. Buat A record baru di DNS Anda untuk mengarahkan sebuah hostname ke IP server Anda.
-[+]      Contoh: Buat A record 'mail.hin0.co.id' yang menunjuk ke '103.93.160.39'.
+[+]      Contoh: Buat A record 'fakedomain.co.id' yang menunjuk ke 'xxx.xxx.xxx.xxx'.
 [+]   2. Ubah MX record Anda agar menunjuk ke hostname yang baru dibuat tersebut.
-[+]      Contoh: Ubah MX record untuk 'hin0.co.id' agar menunjuk ke 'mail.hin0.co.id'.
+[+]      Contoh: Ubah MX record untuk 'fakedomain.co.id' agar menunjuk ke 'mail.fakedomain.co.id'.
 
 =============== Modul 1: Penilaian Autentikasi ===============
 
 =============== Modul 1.1: Pemeriksaan SPF ===============
-[+] SPF record ditemukan: v=spf1 a mx ip4:103.93.160.39 ip4:103.44.27.166 ~all
+[+] SPF record ditemukan: v=spf1 a mx ip4:xxx.xxx.xxx.xxx ip4:xxx.xxx.xxx.xxx ~all
 [!] Kebijakan SPF adalah ~all (SoftFail). Sebaiknya gunakan -all (Fail).
 
 ... (sisa laporan) ...
